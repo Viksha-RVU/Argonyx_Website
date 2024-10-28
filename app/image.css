@@ -8,6 +8,10 @@ body {
 
 @media (min-width: 1024px) { 
   body {
-    background-image: url('../public/big_screen_bg.jpg');  /* Use a different image for larger screens */
+    background-image: url('../public/big_screen_bg.jpg'); 
+    background-size: cover;  /* Ensures the image covers the screen */
+    background-position: center;
+    background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+    margin: 0;  /* Removes default margin */ /* Use a different image for larger screens */
   }
 }
