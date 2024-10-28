@@ -95,7 +95,7 @@ export default function Home() {
               </div>
             </div>
             {/*Tracks and Problems*/}
-            <div className="flex flex-col md:w-1/2 p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+            <div className="md:w-1/2 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <h2 className="text-3xl md:text-3xl font-semibold flex justify-center text-center">
                 Tracks & Problem Statements
               </h2>
@@ -138,7 +138,8 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap w-full">
-            <div className="flex flex-col md:w-1/2 justify-start pl-10 p-4 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+            <div className="w-full md:[width:calc(50%-2%)] flex flex-col p-4 md:p-5 m-2 md:m-5 rounded-lg space-y-3 
+               md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <h2 className="text-3xl font-semibold text-center">Guidelines</h2>
 
               <div className="flex space-x-2">
