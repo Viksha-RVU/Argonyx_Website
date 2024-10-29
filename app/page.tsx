@@ -214,7 +214,11 @@ export default function Home() {
               </div>
               <div className="flex-grow flex flex-col pr-16">
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-4">
+                  <a
+                    href="https://engagex.app/"
+                    target="_blank"
+                    className="flex items-center space-x-4"
+                  >
                     <Image
                       src={engagexLogo}
                       alt="engagex"
@@ -222,7 +226,7 @@ export default function Home() {
                       width={70}
                     />
                     <span className="text-xl font-semibold pl-4">engagex</span>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
