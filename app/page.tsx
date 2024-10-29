@@ -14,6 +14,7 @@ import { TimelineLayout } from "@/components/HackathonTimeline";
 import { timelineData } from "@/components/data";
 import FadeInSection from "@/components/FadeInSection";
 import Sponsor1 from "@/public/sponsor_1.png";
+import engagexLogo from "@/public/EngageX.jpg";
 
 export default function Home() {
   return (
@@ -138,8 +139,10 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap w-full">
-            <div className="w-full md:[width:calc(50%-2%)] flex flex-col p-4 md:p-5 m-2 md:m-5 rounded-lg space-y-3 
-               md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+            <div
+              className="w-full md:[width:calc(50%-2%)] flex flex-col p-4 md:p-5 m-2 md:m-5 rounded-lg space-y-3 
+               md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70"
+            >
               <h2 className="text-3xl font-semibold text-center">Guidelines</h2>
 
               <div className="flex space-x-2">
@@ -203,7 +206,22 @@ export default function Home() {
                       height={100}
                       width={100}
                     />
-                    <span className="text-xl">ASTRAEA RESEARCH</span>
+                    <span className="text-xl font-semibold">
+                      Astrae Research
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-grow flex flex-col pr-16">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-4">
+                    <Image
+                      src={engagexLogo}
+                      alt="engagex"
+                      height={70}
+                      width={70}
+                    />
+                    <span className="text-xl font-semibold pl-4">engagex</span>
                   </div>
                 </div>
               </div>
