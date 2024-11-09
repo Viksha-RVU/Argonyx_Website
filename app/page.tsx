@@ -97,127 +97,137 @@ export default function Home() {
                                 height={125}
                                 width={125}
                               />
-                              <div className="flex flex-col items-center">
+                              <div className="flex flex-col items-center w-full">
                                 <h2 className="text-2xl font-semibold text-primary pb-2">
                                   AI / ML
                                 </h2>
-                                <Popover>
-                                  <PopoverTrigger>
-                                    <Button>View Problem Statement 1</Button>
-                                  </PopoverTrigger>
-                                  <PopoverContent>
-                                    <div className="flex flex-col items-center">
-                                      <h3 className="text-md font-semibold text-center">
-                                        Unified Social Engagement Tracker for
-                                        Streamlined Digital Interactions
-                                      </h3>
-                                      <br />
-                                      <h4 className="text-sm font-semibold">
-                                        Build an &quot;AI-driven Social
-                                        Engagement Tracker&quot; that empowers
-                                        users to stay connected and engaged with
-                                        key contacts and prospects across
-                                        multiple social media platforms.
-                                      </h4>
-                                      <p className="text-xs">
-                                        This application should allow users to:
-                                        <br />{" "}
-                                        <strong>
-                                          Save and Monitor Profiles:
-                                        </strong>{" "}
-                                        Enable users to save profiles across
-                                        various social media platforms
-                                        (preferably LinkedIn first) to track
-                                        important contacts and prospects.
-                                        <br />{" "}
-                                        <strong>
-                                          Cross-Platform Notifications:
-                                        </strong>{" "}
-                                        Automatically notify users whenever a
-                                        saved contact posts new content,
-                                        regardless of the platform, providing
-                                        seamless updates on activity.
-                                        <br />{" "}
-                                        <strong>Generative AI Insights:</strong>
-                                        Utilize AI to analyze posts for
-                                        sentiment, engagement potential, and
-                                        relevance to the user&apos;s interests
-                                        or industry.
-                                        <br />{" "}
-                                        <strong>
-                                          Personalized Engagement Suggestions:
-                                        </strong>{" "}
-                                        Offer actionable insights and
-                                        suggestions for interactions based on
-                                        content analysis, enabling timely and
-                                        tailored responses across platforms.
-                                        <br />{" "}
-                                        <strong>Unified Dashboard:</strong>{" "}
-                                        Provide a centralized dashboard for
-                                        users to view updates, notifications,
-                                        and suggested interactions, creating a
-                                        streamlined experience.
-                                      </p>
-                                    </div>
-                                  </PopoverContent>
-                                </Popover>
-                                <Popover>
-                                  <PopoverTrigger>
-                                    <Button className="mt-4">
-                                      View Problem Statement 2
-                                    </Button>
-                                  </PopoverTrigger>
-                                  <PopoverContent>
-                                    <div className="flex flex-col items-center">
-                                      <h3 className="text-md font-semibold text-center">
-                                        AI-Powered Job Relevance Analyzer for
-                                        Targeted Career Opportunities
-                                      </h3>
-                                      <br />
-                                      <h4 className="text-sm font-semibold">
-                                        Develop an AI-driven tool that analyzes
-                                        job postings across networking platforms
-                                        to evaluate their relevance for users
-                                        based on their profile.
-                                      </h4>
-                                      <p className="text-xs">
-                                        This application should allow users to:
-                                        <br />{" "}
-                                        <strong>
-                                          Cross-Platform Job Analysis:
-                                        </strong>{" "}
-                                        Aggregate job postings from various
-                                        networking and job platforms (preferably
-                                        LinkedIn first) to provide users with a
-                                        comprehensive view of relevant
-                                        opportunities.
-                                        <br />{" "}
-                                        <strong>
-                                          User Profile Matching:
-                                        </strong>{" "}
-                                        Assess the user&apos;s qualifications,
-                                        skills, and experience to determine the
-                                        fit for each role.
-                                        <br />{" "}
-                                        <strong>
-                                          Strengths and Gap Analysis:{" "}
-                                        </strong>
-                                        Highlight the user&apos;s strengths for
-                                        each job posting and identify potential
-                                        skill or experience gaps, helping users
-                                        understand areas for improvement.
-                                        <br />{" "}
-                                        <strong>
-                                          Opportunity Targeting:
-                                        </strong>{" "}
-                                        Prioritize job opportunities that align
-                                        closely with the user&apos;s profile,
-                                        optimizing their job search with
-                                        targeted recommendations.
-                                      </p>
-                                    </div>
-                                  </PopoverContent>
-                                </Popover>
+                                <div className="flex justify-evenly w-full">
+                                  <Popover>
+                                    <PopoverTrigger>
+                                      <Button>View Problem <br /> Statement 1</Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent>
+                                      <div className="flex flex-col items-center">
+                                        <h3 className="text-md font-semibold text-center">
+                                          Unified Social Engagement Tracker for
+                                          Streamlined Digital Interactions
+                                        </h3>
+                                        <br />
+                                        <h4 className="text-sm font-semibold">
+                                          Build an &quot;AI-driven Social
+                                          Engagement Tracker&quot; that empowers
+                                          users to stay connected and engaged
+                                          with key contacts and prospects across
+                                          multiple social media platforms.
+                                        </h4>
+                                        <p className="text-xs">
+                                          This application should allow users
+                                          to:
+                                          <br />{" "}
+                                          <strong>
+                                            Save and Monitor Profiles:
+                                          </strong>{" "}
+                                          Enable users to save profiles across
+                                          various social media platforms
+                                          (preferably LinkedIn first) to track
+                                          important contacts and prospects.
+                                          <br />{" "}
+                                          <strong>
+                                            Cross-Platform Notifications:
+                                          </strong>{" "}
+                                          Automatically notify users whenever a
+                                          saved contact posts new content,
+                                          regardless of the platform, providing
+                                          seamless updates on activity.
+                                          <br />{" "}
+                                          <strong>
+                                            Generative AI Insights:
+                                          </strong>
+                                          Utilize AI to analyze posts for
+                                          sentiment, engagement potential, and
+                                          relevance to the user&apos;s interests
+                                          or industry.
+                                          <br />{" "}
+                                          <strong>
+                                            Personalized Engagement Suggestions:
+                                          </strong>{" "}
+                                          Offer actionable insights and
+                                          suggestions for interactions based on
+                                          content analysis, enabling timely and
+                                          tailored responses across platforms.
+                                          <br />{" "}
+                                          <strong>
+                                            Unified Dashboard:
+                                          </strong>{" "}
+                                          Provide a centralized dashboard for
+                                          users to view updates, notifications,
+                                          and suggested interactions, creating a
+                                          streamlined experience.
+                                        </p>
+                                      </div>
+                                    </PopoverContent>
+                                  </Popover>
+                                  <Popover>
+                                    <PopoverTrigger>
+                                      <Button className="">
+                                        View Problem <br /> Statement 2
+                                      </Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent>
+                                      <div className="flex flex-col items-center">
+                                        <h3 className="text-md font-semibold text-center">
+                                          AI-Powered Job Relevance Analyzer for
+                                          Targeted Career Opportunities
+                                        </h3>
+                                        <br />
+                                        <h4 className="text-sm font-semibold">
+                                          Develop an AI-driven tool that
+                                          analyzes job postings across
+                                          networking platforms to evaluate their
+                                          relevance for users based on their
+                                          profile.
+                                        </h4>
+                                        <p className="text-xs">
+                                          This application should allow users
+                                          to:
+                                          <br />{" "}
+                                          <strong>
+                                            Cross-Platform Job Analysis:
+                                          </strong>{" "}
+                                          Aggregate job postings from various
+                                          networking and job platforms
+                                          (preferably LinkedIn first) to provide
+                                          users with a comprehensive view of
+                                          relevant opportunities.
+                                          <br />{" "}
+                                          <strong>
+                                            User Profile Matching:
+                                          </strong>{" "}
+                                          Assess the user&apos;s qualifications,
+                                          skills, and experience to determine
+                                          the fit for each role.
+                                          <br />{" "}
+                                          <strong>
+                                            Strengths and Gap Analysis:{" "}
+                                          </strong>
+                                          Highlight the user&apos;s strengths
+                                          for each job posting and identify
+                                          potential skill or experience gaps,
+                                          helping users understand areas for
+                                          improvement.
+                                          <br />{" "}
+                                          <strong>
+                                            Opportunity Targeting:
+                                          </strong>{" "}
+                                          Prioritize job opportunities that
+                                          align closely with the user&apos;s
+                                          profile, optimizing their job search
+                                          with targeted recommendations.
+                                        </p>
+                                      </div>
+                                    </PopoverContent>
+                                  </Popover>
+                                </div>
                               </div>
                               <Image
                                 src={WebLogo}
