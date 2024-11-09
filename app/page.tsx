@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
@@ -140,8 +141,8 @@ export default function Home() {
                                         <strong>Generative AI Insights:</strong>
                                         Utilize AI to analyze posts for
                                         sentiment, engagement potential, and
-                                        relevance to the user&apos;s interests or
-                                        industry.
+                                        relevance to the user&apos;s interests
+                                        or industry.
                                         <br />{" "}
                                         <strong>
                                           Personalized Engagement Suggestions:
@@ -213,7 +214,6 @@ export default function Home() {
                                         closely with the user&apos;s profile,
                                         optimizing their job search with
                                         targeted recommendations.
-                                        
                                       </p>
                                     </div>
                                   </PopoverContent>
@@ -295,9 +295,21 @@ export default function Home() {
                             </div>
                           </DrawerDescription>
                         </DrawerHeader>
-                        
                       </DrawerContent>
                     </Drawer>
+                  </div>
+                  <div className="flex justify-center w-full pt-4">
+                    {" "}
+                    <a
+                      href="https://unstop.com/hackathons/argonyx-24-rv-university-1200874"
+                      target="_blank"
+                    >
+                      <ShimmerButton className="shadow-2xl">
+                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                          Submit PPT
+                        </span>
+                      </ShimmerButton>
+                    </a>
                   </div>
                 </div>
               </div>
