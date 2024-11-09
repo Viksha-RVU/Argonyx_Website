@@ -295,11 +295,7 @@ export default function Home() {
                             </div>
                           </DrawerDescription>
                         </DrawerHeader>
-                        <DrawerFooter>
-                          <DrawerClose>
-                            <Button variant="outline">Close</Button>
-                          </DrawerClose>
-                        </DrawerFooter>
+                        
                       </DrawerContent>
                     </Drawer>
                   </div>
