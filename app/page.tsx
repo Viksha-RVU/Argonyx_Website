@@ -2,7 +2,27 @@
 import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import CalenderIcon from "@/public/calender.png";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import HyperText from "@/components/ui/hyper-text";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+
+import { cn } from "@/lib/utils";
+import AnimatedShinyText from "@/components/ui/animated-shiny-text";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
 import WebLogo from "@/public/web dev.png";
@@ -40,28 +60,251 @@ export default function Home() {
             {/* Registration Info */}
 
             <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
-              <div className="w-full flex justify-evenly pl-6">
-                <Image
-                  src={CalenderIcon}
-                  alt="calendar"
-                  height={40}
-                  width={70}
-                  style={{ filter: "invert(50%) brightness(180%)" }}
-                />
+              <div className="w-full flex justify-evenly">
                 <div className="flex flex-col justify-center items-start">
-                  <div className="flex text-xl">Registration Deadline</div>
-                  <div className="flex w-full justify-center text-lg">
-                    8th Nov 2024
+                  <div className="flex text-xl flex-col items-center text-center">
+                    <HyperText
+                      className="text-xl font-bold text-black dark:text-white"
+                      text="the registrations are closed!"
+                      duration={10}
+                    />
+                  </div>
+                  <div className="flex justify-center w-full">
+                    <Drawer>
+                      <DrawerTrigger asChild>
+                        <div
+                          className={cn(
+                            "group rounded-full border mt-2 border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+                          )}
+                        >
+                          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 text-lg">
+                            <span>✨ Problem Statements</span>
+                            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                          </AnimatedShinyText>
+                        </div>
+                      </DrawerTrigger>
+                      <DrawerContent>
+                        <DrawerHeader>
+                          <DrawerTitle>
+                            Here are the problem statements!
+                          </DrawerTitle>
+                          <DrawerDescription>
+                            <div className="flex flex-col items-center">
+                              <Image
+                                src={AIImage}
+                                alt="ai_logo"
+                                height={125}
+                                width={125}
+                              />
+                              <div className="flex flex-col items-center">
+                                <h2 className="text-2xl font-semibold text-primary pb-2">
+                                  AI / ML
+                                </h2>
+                                <Popover>
+                                  <PopoverTrigger>
+                                    <Button>View Problem Statement 1</Button>
+                                  </PopoverTrigger>
+                                  <PopoverContent>
+                                    <div className="flex flex-col items-center">
+                                      <h3 className="text-md font-semibold text-center">
+                                        Unified Social Engagement Tracker for
+                                        Streamlined Digital Interactions
+                                      </h3>
+                                      <br />
+                                      <h4 className="text-sm font-semibold">
+                                        Build an &quot;AI-driven Social
+                                        Engagement Tracker&quot; that empowers
+                                        users to stay connected and engaged with
+                                        key contacts and prospects across
+                                        multiple social media platforms.
+                                      </h4>
+                                      <p className="text-xs">
+                                        This application should allow users to:
+                                        <br />{" "}
+                                        <strong>
+                                          Save and Monitor Profiles:
+                                        </strong>{" "}
+                                        Enable users to save profiles across
+                                        various social media platforms
+                                        (preferably LinkedIn first) to track
+                                        important contacts and prospects.
+                                        <br />{" "}
+                                        <strong>
+                                          Cross-Platform Notifications:
+                                        </strong>{" "}
+                                        Automatically notify users whenever a
+                                        saved contact posts new content,
+                                        regardless of the platform, providing
+                                        seamless updates on activity.
+                                        <br />{" "}
+                                        <strong>Generative AI Insights:</strong>
+                                        Utilize AI to analyze posts for
+                                        sentiment, engagement potential, and
+                                        relevance to the user&apos;s interests or
+                                        industry.
+                                        <br />{" "}
+                                        <strong>
+                                          Personalized Engagement Suggestions:
+                                        </strong>{" "}
+                                        Offer actionable insights and
+                                        suggestions for interactions based on
+                                        content analysis, enabling timely and
+                                        tailored responses across platforms.
+                                        <br />{" "}
+                                        <strong>Unified Dashboard:</strong>{" "}
+                                        Provide a centralized dashboard for
+                                        users to view updates, notifications,
+                                        and suggested interactions, creating a
+                                        streamlined experience.
+                                      </p>
+                                    </div>
+                                  </PopoverContent>
+                                </Popover>
+                                <Popover>
+                                  <PopoverTrigger>
+                                    <Button className="mt-4">
+                                      View Problem Statement 2
+                                    </Button>
+                                  </PopoverTrigger>
+                                  <PopoverContent>
+                                    <div className="flex flex-col items-center">
+                                      <h3 className="text-md font-semibold text-center">
+                                        AI-Powered Job Relevance Analyzer for
+                                        Targeted Career Opportunities
+                                      </h3>
+                                      <br />
+                                      <h4 className="text-sm font-semibold">
+                                        Develop an AI-driven tool that analyzes
+                                        job postings across networking platforms
+                                        to evaluate their relevance for users
+                                        based on their profile.
+                                      </h4>
+                                      <p className="text-xs">
+                                        This application should allow users to:
+                                        <br />{" "}
+                                        <strong>
+                                          Cross-Platform Job Analysis:
+                                        </strong>{" "}
+                                        Aggregate job postings from various
+                                        networking and job platforms (preferably
+                                        LinkedIn first) to provide users with a
+                                        comprehensive view of relevant
+                                        opportunities.
+                                        <br />{" "}
+                                        <strong>
+                                          User Profile Matching:
+                                        </strong>{" "}
+                                        Assess the user&apos;s qualifications,
+                                        skills, and experience to determine the
+                                        fit for each role.
+                                        <br />{" "}
+                                        <strong>
+                                          Strengths and Gap Analysis:{" "}
+                                        </strong>
+                                        Highlight the user&apos;s strengths for
+                                        each job posting and identify potential
+                                        skill or experience gaps, helping users
+                                        understand areas for improvement.
+                                        <br />{" "}
+                                        <strong>
+                                          Opportunity Targeting:
+                                        </strong>{" "}
+                                        Prioritize job opportunities that align
+                                        closely with the user&apos;s profile,
+                                        optimizing their job search with
+                                        targeted recommendations.
+                                        
+                                      </p>
+                                    </div>
+                                  </PopoverContent>
+                                </Popover>
+                              </div>
+                              <Image
+                                src={WebLogo}
+                                alt="web_dev_logo"
+                                height={80}
+                                width={80}
+                                className="pt-5"
+                              />
+                              <div className="flex flex-col items-center">
+                                <h2 className="text-xl font-semibold text-primary pb-2">
+                                  Web Development
+                                </h2>
+                                <Popover>
+                                  <PopoverTrigger>
+                                    <Button>View Problem Statement</Button>
+                                  </PopoverTrigger>
+                                  <PopoverContent>
+                                    <div className="flex flex-col items-center">
+                                      <h3 className="text-md font-semibold text-center">
+                                        Smart Travel Companion Platform for
+                                        Enhancing Local Tourism Experiences with
+                                        Data Driven Customer Reach
+                                      </h3>
+                                      <br />
+                                      <h4 className="text-sm font-semibold">
+                                        Build a &quot;Smart Travel Companion
+                                        Platform&quot; that provides travellers
+                                        with an engaging, real-time experience
+                                        of a destination
+                                      </h4>
+                                      <p className="text-xs">
+                                        This platform should identify and
+                                        display area-specific specialities,
+                                        including: <br />{" "}
+                                        <strong>Cuisine recommendations</strong>{" "}
+                                        with must-try local dishes. <br />{" "}
+                                        <strong>
+                                          Geographical Indication (GI)
+                                        </strong>{" "}
+                                        Products specific to the location,
+                                        encouraging travelers to explore and
+                                        purchase authentic, locally crafted
+                                        goods. Landmarks and Activities
+                                        suggestions, including popular and
+                                        hidden gems. <br />{" "}
+                                        <strong>
+                                          Proactive Notifications:
+                                        </strong>
+                                        Once a traveler enters the location and
+                                        opens the app/website, the platform
+                                        should automatically highlight must-see
+                                        and must-do experiences. If the user
+                                        closes the app, notifications should
+                                        keep them informed. <br />{" "}
+                                        <strong>
+                                          Tour and Travel Bookings:
+                                        </strong>{" "}
+                                        If there are guided tours, local
+                                        experiences, or activities (e.g.,
+                                        cultural events, adventure sports), the
+                                        platform should enable users to book
+                                        them directly. <br />{" "}
+                                        <strong>
+                                          Pre-Visit Booking Options:
+                                        </strong>{" "}
+                                        Allow travelers to book experiences,
+                                        tours, and accommodations beforehand,
+                                        ensuring they have priority access and a
+                                        personalized itinerary.
+                                      </p>
+                                    </div>
+                                  </PopoverContent>
+                                </Popover>
+                              </div>
+                            </div>
+                          </DrawerDescription>
+                        </DrawerHeader>
+                        <DrawerFooter>
+                          <DrawerClose>
+                            <Button variant="outline">Close</Button>
+                          </DrawerClose>
+                        </DrawerFooter>
+                      </DrawerContent>
+                    </Drawer>
                   </div>
                 </div>
               </div>
-              <a
-                href="https://unstop.com/o/2dkgqL3?lb=y7pzHMdA"
-                target="_blank"
-                className="flex justify-center"
-              >
-                <Button>Register</Button>
-              </a>
             </div>
           </div>
         </div>
@@ -254,7 +497,7 @@ export default function Home() {
             What&apos;s at Stake - Rewards and Prizes
           </h2>
           <p className="pb-3 text-center">
-            Each track will have rewards for the top three teams of each track:
+            Each track will have rewards for the top three teams:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
             <div className="flex flex-col items-center p-4 rounded-lg ">
@@ -274,7 +517,7 @@ export default function Home() {
             </div>
           </div>
           <p className="pt-3 text-center">
-            Participation certificate for all the participants who make a
+            A Participation certificate for all the participants who make a
             submission. <br />
             Get in touch with amazing startups!
           </p>
