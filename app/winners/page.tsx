@@ -11,6 +11,15 @@ import First from "@/public/first.png";
 import Second from "@/public/second.png";
 import Third from "@/public/third.png";
 import Trophy from "@/public/trophy.png";
+import Team1Web from "@/public/Team1_WebDev.png";
+import Team2Web from "@/public/Team2_WebDev.png";
+import Team3Web from "@/public/Team3_WebDev.png";
+import Team1AIML from "@/public/Team1_AIML.png";
+import Team2AIML from "@/public/Team2_AIML.png";
+import Team3AIML from "@/public/Team3_AIML.png";
+import ConsolidationWeb1 from "@/public/Consolidation_WebDev1.png";
+import ConsolidationWeb2 from "@/public/Consolidation_WebDev2.png";
+import ConsolidationAIML from "@/public/Consolidation_AIML.png";
 
 export default function Winners(): JSX.Element {
   const [showContent, setShowContent] = useState(false);
@@ -96,6 +105,13 @@ export default function Winners(): JSX.Element {
                     >
                       RV University
                     </h4>
+                    <Image
+                      src={Team1AIML}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Francis Maria Sharan</li>
@@ -119,6 +135,13 @@ export default function Winners(): JSX.Element {
                     >
                       RV University
                     </h4>
+                    <Image
+                      src={Team2AIML}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Bommireddy C Nishant Reddy</li>
@@ -141,6 +164,13 @@ export default function Winners(): JSX.Element {
                     >
                       Christ University
                     </h4>
+                    <Image
+                      src={Team3AIML}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Ansul Kumar</li>
@@ -179,6 +209,13 @@ export default function Winners(): JSX.Element {
                     >
                       RVCE
                     </h4>
+                    <Image
+                      src={ConsolidationAIML}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Harshit Saroha</li>
@@ -188,10 +225,6 @@ export default function Winners(): JSX.Element {
                         <li>Akshat Gupta</li>
                       </div>
                     </ul>
-                    
-
-
-                    
                   </div>
                 </NeonGradientCard>
               </div>
@@ -215,6 +248,13 @@ export default function Winners(): JSX.Element {
                     <h4 className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
                       BMSCE
                     </h4>
+                    <Image
+                      src={Team1Web}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>K Vijay</li>
@@ -239,6 +279,13 @@ export default function Winners(): JSX.Element {
                     >
                       RVCE
                     </h4>
+                    <Image
+                      src={Team2Web}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Joseph Rejo Mathew</li>
@@ -263,6 +310,13 @@ export default function Winners(): JSX.Element {
                     >
                       REVA
                     </h4>
+                    <Image
+                      src={Team3Web}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Rijo Simon TM</li>
@@ -301,6 +355,13 @@ export default function Winners(): JSX.Element {
                     >
                       RV University
                     </h4>
+                    <Image
+                      src={ConsolidationWeb1}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Saanvi R Prabhu</li>
@@ -326,6 +387,13 @@ export default function Winners(): JSX.Element {
                     >
                       MSRIT
                     </h4>
+                    <Image
+                      src={ConsolidationWeb2}
+                      alt="ai_logo"
+                      height={200}
+                      width={200}
+                      className="mt-2 border border-white rounded"
+                    />
                     <ul className="pt-2">
                       <div className="flex flex-col items-center">
                         <li>Chitrita BS</li>
