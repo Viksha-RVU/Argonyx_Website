@@ -16,7 +16,7 @@ export const timelineData = [
   {
     id: 3,
     title: "Submission Deadline (PPT)",
-    date: "10th November at 8:00 PM",
+    date: "10th November at 12:00 PM",
     description:
       "Participants need to submit their solution in the form of a PowerPoint presentation (PPT) by noon. This is the cutoff for all submissions for the first round. Submissions after this time won’t be accepted for evaluation.",
   },
@@ -25,7 +25,7 @@ export const timelineData = [
     title: "Selected Teams Announced",
     date: "13th November",
     description:
-      "The top 20 teams from each track, advancing to the next round will be announced. Only shortlisted teams will be eligible to participate in the subsequent phases of the competition.",
+      "The top 15 teams from each track, advancing to the next round will be announced. Only shortlisted teams will be eligible to participate in the subsequent phases of the competition.",
   },
   {
     id: 5,

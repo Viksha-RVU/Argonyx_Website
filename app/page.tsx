@@ -1,28 +1,11 @@
 "use client";
 import * as React from "react";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import HyperText from "@/components/ui/hyper-text";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import ShimmerButton from "@/components/ui/shimmer-button";
 
-import { cn } from "@/lib/utils";
-import AnimatedShinyText from "@/components/ui/animated-shiny-text";
-import {
-  Drawer,
+import PulsatingButton from "@/components/ui/pulsating-button";
 
-  DrawerContent,
-  DrawerDescription,
 
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
@@ -60,17 +43,17 @@ export default function Home() {
 
             {/* Registration Info */}
 
-            <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+            <div className="flex-1 h-fit md:w-1/4 flex flex-col items-center p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly">
-                <div className="flex flex-col justify-center items-start">
+                <div className="flex flex-col justify-center items-center">
                   <div className="flex text-xl flex-col items-center text-center">
                     <HyperText
                       className="text-xl font-bold text-black dark:text-white"
-                      text="the registrations are closed!"
+                      text="the winners are announced!"
                       duration={10}
                     />
                   </div>
-                  <div className="flex justify-center w-full">
+                  {/* <div className="flex justify-center w-full">
                     <Drawer>
                       <DrawerTrigger asChild>
                         <div
@@ -104,7 +87,9 @@ export default function Home() {
                                 <div className="flex justify-evenly w-full">
                                   <Popover>
                                     <PopoverTrigger>
-                                      <Button>View Problem <br /> Statement 1</Button>
+                                      <Button>
+                                        View Problem <br /> Statement 1
+                                      </Button>
                                     </PopoverTrigger>
                                     <PopoverContent>
                                       <div className="flex flex-col items-center">
@@ -307,18 +292,18 @@ export default function Home() {
                         </DrawerHeader>
                       </DrawerContent>
                     </Drawer>
-                  </div>
-                  <div className="flex justify-center w-full pt-4">
+                  </div> */}
+                  <div className="flex justify-center w-full">
                     {" "}
-                    <a
-                      href="https://unstop.com/hackathons/argonyx-24-rv-university-1200874"
-                      target="_blank"
-                    >
-                      <ShimmerButton className="shadow-2xl">
-                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                          Submit PPT
-                        </span>
-                      </ShimmerButton>
+                    <a href="/winners">
+                      <PulsatingButton>View Winners</PulsatingButton>
+                    </a>
+                  </div>
+                  <div className="flex flex-col justify-center items-center w-full pt-4">
+                    {" "}
+                    <h1>Give us your feedback regarding the event!</h1>
+                    <a href="https://forms.gle/3fpMHUHgRxG8CPDP8" target="_blank" className="pt-2">
+                      <PulsatingButton>Feedback Form</PulsatingButton>
                     </a>
                   </div>
                 </div>
